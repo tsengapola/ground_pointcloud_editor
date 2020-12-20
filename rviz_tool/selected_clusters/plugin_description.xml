@@ -1,0 +1,10 @@
+<library path="libselected_clusters">
+  <class name="rviz_plugin_selected_clusters/SelectedClusters"
+         type="rviz_plugin_selected_clusters::SelectedClusters"
+         base_class_type="rviz::Tool">
+    <description>
+      Fork of the rviz::SelectionTool:
+      Select clusters for point cloud edit.
+    </description>
+  </class>
+</library>

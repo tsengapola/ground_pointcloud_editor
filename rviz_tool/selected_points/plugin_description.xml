@@ -1,0 +1,10 @@
+<library path="libselected_points">
+  <class name="rviz_plugin_selected_points/SelectedPoints"
+         type="rviz_plugin_selected_points::SelectedPoints"
+         base_class_type="rviz::Tool">
+    <description>
+      Fork of the rviz::SelectionTool:
+      Select points for point cloud edit.
+    </description>
+  </class>
+</library>
