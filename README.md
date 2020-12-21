@@ -29,23 +29,27 @@ Keyboard d:
 Delete selected clusters: 
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
+
 ```
 Keyboard w:
 
 Delete wall clusters: 
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/wall_delete.gif" width="400" height="265"/>
+
 ```
 Keyboard r:
 
 Reset all clusters: 
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/reset_all.gif" width="400" height="265"/>
+
 ```
 Keyboard k:
 
 Save result point cloud in /tmp/ground.pcd with pcl::PointXYZ format
 ```
+
 ```
 Keyboard z:
 
