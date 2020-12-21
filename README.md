@@ -1,7 +1,8 @@
 # ground_pointcloud_editor
 This is a point cloud editor can be used to delete/patch/save point cloud for traversibility map.
-
+```
 Rviz is used to edit the point cloud, no extra gui is required!
+```
 
 This application comprises two parts:
 1. Customized rviz tools which procide the editing functions.
@@ -19,6 +20,10 @@ This application comprises two parts:
 
 [![alt text](https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/demo_main.gif)](https://www.youtube.com/watch?v=5-HCcPmUQBg "Ground point cloud editor")
 
+## How to?
+```
+roslaunch ground_pointcloud_editor test.launch
+```
 
 ## Documentations
 Two buttons with functions are implemented for Rviz. Users can fell free to edit the point cloud in Rviz.
