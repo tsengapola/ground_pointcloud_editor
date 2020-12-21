@@ -12,6 +12,7 @@ This application comprises two parts:
 [pcl_ros](http://wiki.ros.org/pcl_ros)
 
 ## Demo: edit point cloud by selecting clusters and points
+[youtube](https://www.youtube.com/watch?v=5-HCcPmUQBg)
 [![alt text](https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/demo_main.gif)](https://www.youtube.com/watch?v=5-HCcPmUQBg "Ground point cloud editor")
 
 
