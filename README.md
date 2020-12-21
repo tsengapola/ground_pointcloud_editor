@@ -1,6 +1,8 @@
 # ground_pointcloud_editor
 This is a point cloud editor can be used to delete/patch/save point cloud for traversibility map.
 
+Rviz is used to edit the point cloud, no extra gui is required!
+
 This application comprises two parts:
 1. Customized rviz tools which procide the editing functions.
 2. The node which comprises edited data structures and algorithm.
@@ -19,8 +21,9 @@ This application comprises two parts:
 
 
 ## Documentations
+Two buttons with functions are implemented for Rviz. Users can fell free to edit the point cloud in Rviz.
 
-### Using selected clusters
+### Button of selected clusters
 The selections will be on the clusters, all operations will be based on clusters.
 The topic GED_current_selected_clusters shows the selected point cloud.
 ```
@@ -62,7 +65,7 @@ Return last step
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/last_step.gif" width="400" height="265"/>
 
-### Using selected points
+### Button of selected points
 The selection is implemented with aggregated selection.
 The topic GED_current_selected_points shows the selected points.
 
