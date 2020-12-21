@@ -23,11 +23,11 @@ This application comprises two parts:
 ### Using selected clusters
 The selections will be on the clusters, all operations will be based on clusters.
 The topic GED_current_selected_clusters shows the selected point cloud.
-
+```
 Keyboard d:
 
 Delete selected clusters: 
-
+```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
 
 Keyboard w:
