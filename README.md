@@ -20,7 +20,7 @@ This application comprises two parts:
 
 [![alt text](https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/demo_main.gif)](https://www.youtube.com/watch?v=5-HCcPmUQBg "Ground point cloud editor")
 
-## How to?
+## How to play?
 ```
 roslaunch ground_pointcloud_editor test.launch
 ```
