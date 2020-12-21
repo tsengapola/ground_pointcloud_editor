@@ -438,6 +438,10 @@ void Ground_PointCloud_Editor::funcPatchPlanar(){
 void Ground_PointCloud_Editor::cbKeyBoardPoints(const std_msgs::String::ConstPtr& msg){
 
   if( strstr(msg->data.c_str(),"p") || strstr(msg->data.c_str(),"P") ){
+    if(pc_aggregated_->points.size()<3){
+      ROS_WARN("Detect %s, selected points are less than 3. Selected more points.",msg->data.c_str());
+      return;
+    }
     ROS_WARN("Detect %s, Patch the area.",msg->data.c_str());
     funcPatchPlanar();
   }
