@@ -12,9 +12,42 @@ This application comprises two parts:
 [pcl_ros](http://wiki.ros.org/pcl_ros)
 
 ## Demo: edit point cloud by selecting clusters and points
-[youtube](https://www.youtube.com/watch?v=5-HCcPmUQBg)
+
+[See full video in youtube](https://www.youtube.com/watch?v=5-HCcPmUQBg)
+
 [![alt text](https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/demo_main.gif)](https://www.youtube.com/watch?v=5-HCcPmUQBg "Ground point cloud editor")
 
 
+## Documentations
 
-Since this is a editor, the 'last step' function is provided.
+### Using selected clusters
+The selections will be on the clusters, all operations will be based on clusters.
+The topic GED_current_selected_clusters shows the selected point cloud.
+
+Keyboard d:
+
+Delete selected clusters: 
+
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
+
+Keyboard w:
+
+Delete wall clusters: 
+
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/wall_delete.gif" width="400" height="265"/>
+
+Keyboard r:
+
+Reset all clusters: 
+
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/reset_all.gif" width="400" height="265"/>
+
+Keyboard k:
+
+Save result point cloud in /tmp/ground.pcd with pcl::PointXYZ format
+
+Keyboard z:
+
+Return last step
+
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/last_step.gif" width="400" height="265"/>
