@@ -61,3 +61,29 @@ Keyboard z:
 Return last step
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/last_step.gif" width="400" height="265"/>
+
+### Using selected points
+The selection is implemented with aggregated selection.
+The topic GED_current_selected_points shows the selected points.
+
+```
+Keyboard p:
+
+Patch ground points around selected points:
+```
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/path_around_points.gif" width="400" height="265"/>
+
+```
+Keyboard c:
+
+Clear aggregated points selection:
+```
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clear_selected_points.gif" width="400" height="265"/>
+
+```
+Keyboard d:
+
+Delete selected points:
+```
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/points_delete.gif" width="400" height="265"/>
+
