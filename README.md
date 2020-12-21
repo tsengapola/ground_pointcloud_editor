@@ -26,8 +26,11 @@ The topic GED_current_selected_clusters shows the selected point cloud.
 ```
 Keyboard d:
 
-Delete selected clusters: the selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing.
+Delete selected clusters:
 ```
+
+The selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing.
+
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
 
 ```
