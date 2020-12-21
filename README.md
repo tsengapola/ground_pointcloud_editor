@@ -71,6 +71,8 @@ Keyboard p:
 
 Patch ground points around selected points:
 ```
+RANSAC is used to find the plane of selected points and fill the hole by iterating the selected area.
+
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/path_around_points.gif" width="400" height="265"/>
 
 ```
