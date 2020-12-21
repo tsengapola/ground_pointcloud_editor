@@ -29,9 +29,11 @@ Keyboard d:
 Delete selected clusters:
 ```
 
-The selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing.
-
+The selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing (See right gif).
+<p float="left">
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/select_slice.gif" width="400" height="265"/>
+</p>
 
 ```
 Keyboard w:
