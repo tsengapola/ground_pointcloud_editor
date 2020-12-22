@@ -2,6 +2,7 @@
 This is a point cloud editor can be used to delete/patch/save point cloud for traversibility map.
 
 > Rviz is used to edit the point cloud, no extra gui is required!
+
 > This tool can patch the holes on the ground using RANSAC to find the optimal plane!
 
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/path_around_points.gif" width="400" height="265"/>
