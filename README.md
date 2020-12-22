@@ -26,10 +26,10 @@ roslaunch ground_pointcloud_editor test.launch
 ```
 
 ## Documentations
-Two buttons with functions are implemented for Rviz. Users can fell free to edit the point cloud in Rviz.
+Two tools with functions are implemented for Rviz. Users just need to use these two tools to edit the point cloud in Rviz.
 
 ### Button of selected clusters
-The selections will be on the clusters, all operations will be based on clusters.
+The selections will be on the clusters, all operations will be affected on clusters.
 The topic GED_current_selected_clusters shows the selected point cloud.
 ```
 Keyboard d:
@@ -37,7 +37,7 @@ Keyboard d:
 Delete selected clusters:
 ```
 
-The selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing (See right gif).
+The selection from z axis is sliced selection, it only selects clusters from max_z to max_z-1.0 which is useful for multiple floors editing (See right .gif).
 <p float="left">
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/select_slice.gif" width="400" height="265"/>
@@ -66,7 +66,7 @@ Save result point cloud in /tmp/ground.pcd with pcl::PointXYZ format
 ```
 Keyboard z:
 
-Return last step
+Return to last step
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/last_step.gif" width="400" height="265"/>
 
