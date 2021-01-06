@@ -3,13 +3,19 @@ This is a point cloud editor can be used to delete/patch/save point cloud for tr
 
 > Rviz is used to edit the point cloud, no extra gui is required!
 
+> This tool can patch the holes on the ground using RANSAC to find the optimal plane!
+
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/path_around_points.gif" width="400" height="265"/>
 
 This application comprises two parts:
 1. Customized rviz tools which procide the editing functions.
 2. The node which comprises edited data structures and algorithm.
-  a. The region growing algorithm is first used to segment the whole point cloud.
-  b. The first tool is used to edit the point cloud by selecting clusters.
-  c. The second tool is used to edit the point cloud by selecting points.
+
+  * The region growing algorithm is first used to segment the whole point cloud.
+  
+  * The first tool is used to edit the point cloud by selecting clusters.
+  
+  * The second tool is used to edit the point cloud by selecting points.
 
 ## Required package
 [pcl_ros](http://wiki.ros.org/pcl_ros)
@@ -26,10 +32,10 @@ roslaunch ground_pointcloud_editor test.launch
 ```
 
 ## Documentations
-Two buttons with functions are implemented for Rviz. Users can fell free to edit the point cloud in Rviz.
+Two tools with functions are implemented for Rviz. Users just need to use these two tools to edit the point cloud in Rviz.
 
 ### Button of selected clusters
-The selections will be on the clusters, all operations will be based on clusters.
+The selections will be on the clusters, all operations will be affected on clusters.
 The topic GED_current_selected_clusters shows the selected point cloud.
 ```
 Keyboard d:
@@ -37,7 +43,7 @@ Keyboard d:
 Delete selected clusters:
 ```
 
-The selection from z axis is sliced selection, every time it only selects clusters from max-z to max-z-1.0 which is useful for multiple floors editing (See right gif).
+The selection from z axis is sliced selection, it only selects clusters from max_z to max_z-1.0 which is useful for multiple floors editing (See right .gif).
 <p float="left">
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/clusters_delete.gif" width="400" height="265"/>
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/select_slice.gif" width="400" height="265"/>
@@ -66,7 +72,7 @@ Save result point cloud in /tmp/ground.pcd with pcl::PointXYZ format
 ```
 Keyboard z:
 
-Return last step
+Return to last step
 ```
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/last_step.gif" width="400" height="265"/>
 
