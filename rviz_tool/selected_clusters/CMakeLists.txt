@@ -4,11 +4,24 @@
 ## First start with some standard catkin stuff.
 cmake_minimum_required(VERSION 2.8.3)
 project(selected_clusters)
-find_package(catkin REQUIRED COMPONENTS rviz)
-catkin_package()
-find_package(PCL REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  rviz
+  pcl_ros
+  pcl_conversions
+)
+
+find_package(PCL REQUIRED QUIET)
+
+catkin_package(
+  INCLUDE_DIRS include
+  CATKIN_DEPENDS
+    pcl_ros
+    pcl_conversions
+  DEPENDS PCL
+)
+
 include_directories(include ${catkin_INCLUDE_DIRS}  ${PCL_INCLUDE_DIRS})
-link_directories(${catkin_LIBRARY_DIRS})
+link_directories(${catkin_LIBRARY_DIRS} ${PCL_LIBRARY_DIRS})
 
 ## This plugin includes Qt widgets, so we must include Qt like so:
 option(UseQt5 "UseQt5" ON)
