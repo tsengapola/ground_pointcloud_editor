@@ -8,14 +8,14 @@ This is a point cloud editor can be used to delete/patch/save point cloud for tr
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/ground_editor/path_around_points.gif" width="400" height="265"/>
 
 This application comprises two parts:
-1. Customized rviz tools which procide the editing functions.
-2. The node which comprises edited data structures and algorithm.
+1. Customized rviz tools for the editing functions.
+2. The ros node that read pcd file and provides editing functions with algorithms (for example, segmentation for wall removal.).
 
-  * The region growing algorithm is first used to segment the whole point cloud.
+  * The region growing algorithm is used to segment the whole point cloud when .pcd is imported.
   
-  * The first tool is used to edit the point cloud by selecting clusters.
+  * The first tool in Rviz is used to edit the point cloud by selecting clusters.
   
-  * The second tool is used to edit the point cloud by selecting points.
+  * The second tool in Rviz is used to edit the point cloud by selecting points.
 
 ## Required package
 [pcl_ros](http://wiki.ros.org/pcl_ros)
