@@ -89,7 +89,10 @@ int SelectedPoints::processKeyEvent( QKeyEvent* event, rviz::RenderPanel* panel 
             accumulated_selected_pc_.reset(new pcl::PointCloud<pcl::PointXYZ>);
             this->num_acc_points_ = 0;
         }
+        return Render;
     }
+    else
+        return Render;
 }
 
 int SelectedPoints::processMouseEvent( rviz::ViewportMouseEvent& event )
